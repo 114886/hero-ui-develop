@@ -8,7 +8,7 @@ export default {
   name: "App",
   setup() {
     const asideVisible = ref(false);
-    provide("xxx", asideVisible);
+    provide("asideVisible", asideVisible);
   },
 };
 </script>
