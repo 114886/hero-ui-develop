@@ -2,7 +2,7 @@
   <div class="layout">
     <Topnav class="nav" />
     <div class="content">
-      <aside v-if="asideVisible">
+      <aside v-if="menuVisible">
         <h2>组件列表</h2>
         <ol>
           <li>
@@ -31,8 +31,8 @@ import { inject, Ref } from "vue";
 export default {
   components: { Topnav },
   setup() {
-    const asideVisible = inject<Ref<boolean>>("asideVisible"); // get
-    return { asideVisible };
+    const menuVisible = inject<Ref<boolean>>("menuVisible"); // get
+    return { menuVisible };
   },
 };
 </script>
@@ -61,7 +61,7 @@ export default {
   > main {
     flex-grow: 1;
     padding: 16px;
-    background: lightgreen;
+    background: white;
   }
 }
 aside {
