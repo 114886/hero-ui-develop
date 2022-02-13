@@ -1,19 +1,20 @@
 <template>
   <div>
-    switchdemo内容
+    <Switch></Switch>
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Switch from "../lib/Switch.vue";
 export default {
-  setup () {
-    
-
-    return {}
-  }
-}
+  components: {
+    Switch,
+  },
+  step() {
+    return {};
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-
 </style>
