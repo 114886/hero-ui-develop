@@ -1,10 +1,6 @@
 <template>
   <button @click="toggle" :class="{ checked: value }"><span></span></button>
-  <div>
-    {{ value }}
-  </div>
 </template>
-
 <script lang="ts">
 import { ref } from "vue";
 export default {
@@ -14,12 +10,12 @@ export default {
   setup(props, context) {
     const toggle = () => {
       context.emit("input", !props.value);
+      // this.$emit()
     };
     return { toggle };
   },
 };
 </script>
-
 
 <style lang="scss" scoped>
 $h: 22px;
@@ -28,7 +24,7 @@ button {
   height: $h;
   width: $h * 2;
   border: none;
-  background: gray;
+  background: grey;
   border-radius: $h/2;
   position: relative;
 }
