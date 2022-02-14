@@ -20,6 +20,7 @@
     </Teleport>
   </template>
 </template>
+</template>
 
 <script lang="ts">
 import Button from "./Button.vue";
@@ -58,7 +59,7 @@ export default {
       }
     };
     const cancel = () => {
-      context.emit("cancel");
+      props.cancel?.();
       close();
     };
     return {
