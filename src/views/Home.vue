@@ -15,7 +15,7 @@
       <ul>
         <li>
           <svg>
-            <use xlink:href="#icon-vue"></use>
+            <use xlink:href="#icon-Vue"></use>
           </svg>
           <h3>基于 Vue 3</h3>
           <p>骄傲地使用了 Vue 3 Composition API</p>
@@ -29,7 +29,7 @@
         </li>
         <li>
           <svg>
-            <use xlink:href="#icon-light"></use>
+            <use xlink:href="#icon-tishi2"></use>
           </svg>
           <h3>代码易读</h3>
           <p>每个组件的源代码都极其简洁</p>
