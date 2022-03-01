@@ -10,12 +10,12 @@ export default {
     globals: {
       vue: 'Vue'
     },
-    name: 'hero-ui',
+    name: 'HeroUi',
     file: 'dist/lib/gulu.js',
     format: 'umd',
     plugins: [terser()]
   }, {
-    name: 'hero-ui',
+    name: 'HeroUi',
     file: 'dist/lib/gulu.esm.js',
     format: 'es',
     plugins: [terser()]
