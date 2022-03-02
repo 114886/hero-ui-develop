@@ -4,7 +4,7 @@
 然后在你的代码中写入下面的代码
 
 ```
-import {Button, Tabs, Switch, Dialog} from "hero-ui"
+import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "hero-ui-haozhichao"
 ```
 
 就可以使用我提供的组件了。
@@ -20,7 +20,7 @@ import {Button, Tabs, Switch, Dialog} from "hero-ui"
   </div>
 </template>
 <script>
-import {Button, Tabs, Switch, Dialog} from "hero-ui"
+import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "hero-ui-haozhichao"
 export default {
   components: {Button}
 }
