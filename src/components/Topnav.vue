@@ -2,7 +2,7 @@
   <div class="topnav">
     <router-link to="/" class="logo">
       <svg class="icon">
-        <use xlink:href="#icon-wangzhe"></use>
+        <use xlink:href="#icon--SuperheroFlat2"></use>
       </svg>
     </router-link>
     <ul class="menu">
@@ -11,7 +11,7 @@
       </li>
     </ul>
     <svg v-if="toggleMenuButtonVisible" class="toggleAside" @click="toggleMenu">
-      <use xlink:href="#icon-menu"></use>
+      <use xlink:href="#icon-liebiao1"></use>
     </svg>
   </div>
 </template>
@@ -43,7 +43,7 @@ $color: #007974;
 .topnav {
   color: $color;
   display: flex;
-  padding: 16px;
+  padding: 30px 30px 16px 115px;
   position: fixed;
   top: 0;
   left: 0;
@@ -55,10 +55,9 @@ $color: #007974;
   > .logo {
     max-width: 6em;
     margin-right: auto;
-
     > svg {
-      width: 32px;
-      height: 32px;
+      width: 56px;
+      height: 56px;
     }
   }
 
@@ -69,6 +68,7 @@ $color: #007974;
 
     > li {
       margin: 0 1em;
+      font-size: 20px;
     }
   }
 
@@ -80,7 +80,7 @@ $color: #007974;
     top: 50%;
     transform: translateY(-50%);
     display: none;
-    background: fade-out(black, 0.9);
+    // background: fade-out(black, 0.9);
   }
 
   @media (max-width: 500px) {
@@ -95,6 +95,11 @@ $color: #007974;
     > .toggleAside {
       display: inline-block;
     }
+  }
+}
+@media (max-width: 500px) {
+  .topnav {
+    padding: 16px;
   }
 }
 </style>

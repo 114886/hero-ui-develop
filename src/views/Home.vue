@@ -89,31 +89,43 @@ $color: #007974;
   > ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
     > li {
       margin: 16px 0;
-      display: grid;
-      justify-content: start;
-      align-content: space-between;
-      grid-template-areas:
-        "icon title"
-        "icon text";
-      grid-template-columns: 80px auto;
-      grid-template-rows: 1fr auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 0 40px;
+      width: 300px;
+      // display: grid;
+      // justify-content: start;
+      // align-content: space-between;
+      // grid-template-areas:
+      //   "icon title"
+      //   "icon text";
+      // grid-template-columns: 80px auto;
+      // grid-template-rows: 1fr auto;
 
       > svg {
-        grid-area: icon;
+        // grid-area: icon;
         width: 64px;
         height: 64px;
+        // vertical-align: -0.15em;
+        // fill: currentColor;
+        // overflow: hidden;
       }
 
       > h3 {
-        grid-area: title;
+        // grid-area: title;
         font-size: 28px;
       }
 
       > p {
-        grid-area: text;
+        text-align: center;
+        font-size: 14px;
+        // grid-area: text;
       }
     }
   }

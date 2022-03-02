@@ -68,11 +68,11 @@ $aside-index: 10;
 
   > .content {
     flex-grow: 1;
-    padding-top: 60px;
-    padding-left: 156px;
+    padding: 75px 40px 0 340px;
 
     @media (max-width: 500px) {
       padding-left: 0;
+      padding-right: 0;
     }
   }
 }
@@ -87,20 +87,20 @@ $aside-index: 10;
   > main {
     flex-grow: 1;
     padding: 16px;
-    background: white;
+    background: rgba(0, 0, 0, 0.1);
   }
 }
 
 aside {
   background: lightblue;
-  width: 150px;
-  padding: 16px 0;
+  width: 300px;
+  padding: 85px 0 16px;
   position: fixed;
   top: 0;
   left: 0;
-  padding-top: 70px;
   height: 100%;
   z-index: $aside-index;
+  background: rgba(0, 0, 0, 0.1);
 
   > h2 {
     margin-bottom: 4px;
@@ -111,7 +111,8 @@ aside {
     > li {
       > a {
         display: block;
-        padding: 4px 16px;
+        padding: 10px 32px;
+        color: #3a6199;
         text-decoration: none;
       }
 
@@ -121,7 +122,11 @@ aside {
     }
   }
 }
-
+@media (max-width: 500px) {
+  aside {
+    background: white;
+  }
+}
 main {
   overflow: auto;
 }
