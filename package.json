@@ -1,6 +1,6 @@
 {
   "name": "hero-ui-haozhichao",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "files": ["dist/lib/*"],
   "main": "dist/lib/gulu.js",
   "scripts": {
