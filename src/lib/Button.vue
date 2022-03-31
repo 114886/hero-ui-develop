@@ -82,6 +82,7 @@ $grey: grey;
   &.gulu-theme-link {
     border-color: transparent;
     box-shadow: none;
+    background: transparent;
     color: $blue;
     &:hover,
     &:focus {
@@ -91,6 +92,7 @@ $grey: grey;
   &.gulu-theme-text {
     border-color: transparent;
     box-shadow: none;
+    background: transparent;
     color: inherit;
     &:hover,
     &:focus {

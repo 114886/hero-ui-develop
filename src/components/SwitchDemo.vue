@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$border-color: #daa593;
+$border-color: #e9e2f7;
 
 .demo {
   border: 1px solid $border-color;

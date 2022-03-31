@@ -87,12 +87,12 @@ $aside-index: 10;
   > main {
     flex-grow: 1;
     padding: 16px;
-    background: rgba(0, 0, 0, 0.1);
+    background: #ffffff;
   }
 }
 
 aside {
-  background: lightblue;
+  background: #ffffff;
   width: 300px;
   padding: 85px 0 16px;
   position: fixed;
@@ -100,7 +100,6 @@ aside {
   left: 0;
   height: 100%;
   z-index: $aside-index;
-  background: rgba(0, 0, 0, 0.1);
 
   > h2 {
     margin-bottom: 4px;
@@ -117,16 +116,16 @@ aside {
       }
 
       .router-link-active {
-        background: white;
+        background: #6bb0fd;
       }
     }
   }
 }
-@media (max-width: 500px) {
-  aside {
-    background: white;
-  }
-}
+// @media (max-width: 500px) {
+//   aside {
+//     background: white;
+//   }
+// }
 main {
   overflow: auto;
 }
